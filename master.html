@@ -1,0 +1,422 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <link href="Content/general/all.css" rel="stylesheet" />
+    <link href="Content/general/fontawesome.css" rel="stylesheet" />
+    <link href="Content/general/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/general/style.css" rel="stylesheet" />
+    <link href="Content/general/slimScroll.css" rel="stylesheet" />
+    <title>منصة ربط تبادل المعلومات</title>
+</head>
+<body>
+    <div class="alert_msg">
+        <ul>
+            <li>
+                <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                    تم استلام مراسلة جديدة
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    تم ارسال المراسلة بنجاح
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    حدث خطأ اثناء تنفيذ طلبك
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    برجاء الحظر عند التعديل في البيانات
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </li>
+            <li>
+                <div class="alert alert-secondary" role="alert">
+                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                    جاري تحميل البيانات...
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="modal fade bd-example-modal-lg" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">تبادل مرفقات</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div><!-- END c/container -->
+                <div class="modal-body">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item"><a href="" data-target="#form" data-toggle="tab" class="nav-link active">بيانات المراسلة</a></li>
+                        <li class="nav-item"><a href="" data-target="#attach" data-toggle="tab" class="nav-link">مرفقات المراسلة</a></li>
+                    </ul><!-- END c/nav -->
+                    <div class="tab-content">
+                        <div id="form" class="tab-pane fade active show">
+                            <label>اسم العميل</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-plus-circle" id="plus" data-toggle="tooltip" data-placement="top" title="اضافة اكثر من مستقبل"></i>
+                                    </span>
+                                </div><!-- END c/input-group-prepend -->
+                                <div id="plus_bx" class="plus_bx">
+                                    <ul class="slimScroll_all">
+                                        <li>
+                                            <label class="lbl_check">
+                                                <input type="checkbox">
+                                                <span>اسم العميل</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="lbl_check">
+                                                <input type="checkbox">
+                                                <span>اسم العميل</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="lbl_check">
+                                                <input type="checkbox">
+                                                <span>اسم العميل</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="lbl_check">
+                                                <input type="checkbox">
+                                                <span>اسم العميل</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="lbl_check">
+                                                <input type="checkbox">
+                                                <span>اسم العميل</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="lbl_check">
+                                                <input type="checkbox">
+                                                <span>اسم العميل</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="lbl_check">
+                                                <input type="checkbox">
+                                                <span>اسم العميل</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="lbl_check">
+                                                <input type="checkbox">
+                                                <span>اسم العميل</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="lbl_check">
+                                                <input type="checkbox">
+                                                <span>اسم العميل</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="lbl_check">
+                                                <input type="checkbox">
+                                                <span>اسم العميل</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="lbl_check">
+                                                <input type="checkbox">
+                                                <span>اسم العميل</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="lbl_check">
+                                                <input type="checkbox">
+                                                <span>اسم العميل</span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="lbl_check">
+                                                <input type="checkbox">
+                                                <span>اسم العميل</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="invalid-feedback">
+                                    رسالة الخطأ
+                                </div><!-- END c/invalid-feedback -->
+                            </div><!-- END c/input-group -->
+                            <label>الموضوع</label>
+                            <input type="text" class="form-control">
+                            <div class="invalid-feedback">
+                                رسالة الخطأ
+                            </div><!-- END c/invalid-feedback -->
+                            <label>الشرح</label>
+                            <textarea class="form-control"></textarea>
+                            <div class="invalid-feedback">
+                                رسالة الخطأ
+                            </div><!-- END c/invalid-feedback -->
+                        </div><!-- END c/tab-pane -->
+                        <div id="attach" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-12 col-lg-7 right_form">
+                                    <div class="atch_form">
+                                        <label>نوع المرفق</label>
+                                        <select class="custom-select">
+                                            <option>1</option>
+                                            <option>2</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            رسالة الخطأ
+                                        </div><!-- END c/invalid-feedback -->
+                                        <label>الشرح</label>
+                                        <textarea class="form-control"></textarea>
+                                        <div class="invalid-feedback">
+                                            رسالة الخطأ
+                                        </div><!-- END c/invalid-feedback -->
+                                        <div class="upload_file_bx">
+                                            <input type="file" />
+                                            <h1>اسحب المرفقات هنا</h1>
+                                            <i class="fas fa-plus-circle"></i>
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            رسالة الخطأ
+                                        </div><!-- END c/invalid-feedback -->
+                                    </div><!-- END c/atch_form -->
+                                    <div class="link_form">
+                                        <h1 class="title">
+                                            <span>اضف رابط</span>
+                                        </h1>
+                                        <label>عنوان الرابط</label>
+                                        <input type="text" class="form-control">
+                                        <label>الرابط</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="fas fa-plus-circle" id="plus" data-toggle="tooltip" data-placement="top" title="اضف رابط اخر"></i>
+                                                </span>
+                                            </div><!-- END c/input-group-prepend -->
+                                        </div><!-- END c/input-group -->
+                                    </div><!-- END c/link_form -->
+                                </div> <!-- END c/right_form -->
+                                <div class="col-12 col-lg-5 left_prev">
+                                    <div class="atch_prev">
+                                        <ul class="slimScroll_all">
+                                            <li>
+                                                <i class="fas fa-times" data-toggle="tooltip" data-placement="top" title="حذف"></i>
+                                                <h1>اسم المرفق</h1>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-times" data-toggle="tooltip" data-placement="top" title="حذف"></i>
+                                                <h1>اسم المرفق</h1>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-times" data-toggle="tooltip" data-placement="top" title="حذف"></i>
+                                                <h1>اسم المرفق</h1>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-times" data-toggle="tooltip" data-placement="top" title="حذف"></i>
+                                                <h1>اسم المرفق</h1>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-times" data-toggle="tooltip" data-placement="top" title="حذف"></i>
+                                                <h1>اسم المرفق</h1>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div><!-- END c/atch_prev -->
+                                    <div class="lnk_prev">
+                                        <ul class="slimScroll_all">
+                                            <li>
+                                                <i class="fas fa-times" data-toggle="tooltip" data-placement="top" title="حذف"></i>
+                                                <i class="fas fa-pencil-alt" data-toggle="tooltip" data-placement="top" title="تعديل"></i>
+                                                <h1>عنوان الرابط</h1>
+                                                <p>www.link.com</p>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-times" data-toggle="tooltip" data-placement="top" title="حذف"></i>
+                                                <i class="fas fa-pencil-alt" data-toggle="tooltip" data-placement="top" title="تعديل"></i>
+                                                <h1>عنوان الرابط</h1>
+                                                <p>www.link.com</p>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-times" data-toggle="tooltip" data-placement="top" title="حذف"></i>
+                                                <i class="fas fa-pencil-alt" data-toggle="tooltip" data-placement="top" title="تعديل"></i>
+                                                <h1>عنوان الرابط</h1>
+                                                <p>www.link.com</p>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-times" data-toggle="tooltip" data-placement="top" title="حذف"></i>
+                                                <i class="fas fa-pencil-alt" data-toggle="tooltip" data-placement="top" title="تعديل"></i>
+                                                <h1>عنوان الرابط</h1>
+                                                <p>www.link.com</p>
+                                            </li>
+                                        </ul>
+                                    </div><!-- END c/lnk_prev -->
+                                </div><!-- END c/left_prev -->
+                            </div><!-- END c/row -->
+                        </div><!-- END c/tab-pane -->
+                    </div><!-- END c/tab-content -->
+                </div><!-- END c/modal-body -->
+                <div class="modal-footer">
+                    <input type="button" class="btn" value="ارسال" disabled>
+                </div><!-- END c/modal-footer -->
+            </div><!-- END c/modal-content -->
+        </div><!-- END c/modal-dialog -->
+    </div><!-- END c/modal -->
+
+    <header>
+        <div class="top_header">
+            <div class="top_header_wrapper">
+                <div class="container">
+                    <a href="master.html" class="logo_bx">
+                        <img src="Images/logo.png" alt="logo" />
+                    </a>
+                    <ul class="prof_list">
+                        <li><span class="prof_txt">اسم المستخدم هنا</span></li>
+                        <li class="dropdown">
+                            <span class="notf_txt" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell" data-toggle="tooltip" data-placement="bottom" title="التنبيهات"></i>
+                                <i class="fa fa-circle"></i>
+                            </span>
+                            <ol class="dropdown-menu dropdown-menu-lg-right">
+                                <li><span>نص الرسالة هنا</span></li>
+                                <li><span>نص الرسالة هنا</span></li>
+                                <li><span>نص الرسالة هنا</span></li>
+                                <li><span>نص الرسالة هنا</span></li>
+                                <li><span>نص الرسالة هنا</span></li>
+                                <li><a href="#">المزيد</a></li>
+                            </ol>
+                        </li>
+                        <li><i class="fas fa-sign-out-alt" data-toggle="tooltip" data-placement="bottom" title="تسجيل الخروج"></i></li>
+                    </ul>
+                </div><!-- END c/container -->
+            </div><!-- END c/top_header_wrapper-->
+        </div><!-- END c/top_header -->
+        <div class="bottom_header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12 hid_col"></div><!-- END c/hid_col -->
+                    <div class="col-lg-9 col-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="master.html">الرئيسية</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">ارسال معلومة مكانية</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">استقبال معلومة مكانية</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">تقارير</a>
+                                    </li>
+                                </ul>
+                            </div><!-- END c/collapse -->
+                            <button type="button" class="btn btn-primarynavbar-brand" data-toggle="modal" data-target="#modal1"><i class="fas fa-exchange-alt"></i>تبادل مرفقات</button>
+                        </nav><!-- END c/navbar -->
+                    </div><!-- END c/col-lg-9 -->
+                </div><!-- END c/row -->
+            </div><!-- END c/container -->
+        </div><!-- END c/bottom_header -->
+    </header><!-- END header -->
+    <article>
+        <div class="container">
+            <div class="content_bx master_pg">
+                <div class="mstr_card">
+                    <a href="card.html" class="main_card">
+                        <div class="head_card">
+                            <h1>
+                                <img href="Images/img1.png" alt="image" />
+                                المرسل
+                                <span>20</span>
+                            </h1>
+                        </div><!-- END c/head_card -->
+                        <div class="cont_card">
+                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+                        </div><!-- END c/cont_card -->
+                    </a><!-- END c/main_card -->
+                    <a href="card.html" class="main_card">
+                        <div class="head_card">
+                            <h1>
+                                <img href="Images/img2.png" alt="image" />
+                                المستقبل
+                                <span>20</span>
+                            </h1>
+                        </div><!-- END c/head_card -->
+                        <div class="cont_card">
+                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+                        </div><!-- END c/cont_card -->
+                    </a><!-- END c/main_card -->
+                </div><!-- END c/mstr_card -->
+            </div><!-- END c/master_pg -->
+        </div><!-- END c/container -->
+    </article><!-- END article -->
+
+    <!-- <div class="q_copyright">
+        <p>احد مشاريع<a href="http://www.alqemam.com/" target="_blank"><img href="Images/alqemam.png" alt="alqemam company" /></a>2019 &copy;</p>
+    </div> --><!-- END c/q_copyright -->
+
+
+
+
+    <script href="Scripts/Jquery/jquery-3.3.1.min.js"></script>
+    <script href="Scripts/General/popper.min.js"></script>
+    <script href="Scripts/General/bootstrap.min.js"></script>
+    <script href="Scripts/General/slimScroll.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#plus").click(function () {
+                $("#plus_bx").slideToggle("slow");
+            });
+            $('[data-toggle="tooltip"]').tooltip({
+                html: true,
+            });
+            $('.slimScroll_all').slimScroll({
+                height: 'auto'
+            });
+        });
+    </script>
+
+</body>
+</html>

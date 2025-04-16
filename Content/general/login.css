@@ -1,0 +1,325 @@
+@font-face {
+    font-family: 'TajawalBold';
+    src: url('../fonts/TajawalBold.eot');
+    src: url('../fonts/TajawalBold.eot') format('embedded-opentype'), url('../fonts/TajawalBold.woff2') format('woff2'), url('../fonts/TajawalBold.woff') format('woff'), url('../fonts/TajawalBold.ttf') format('truetype'), url('../fonts/TajawalBold.svg#TajawalBold') format('svg');
+}
+
+@font-face {
+    font-family: 'TajawalRegular';
+    src: url('../fonts/TajawalRegular.eot');
+    src: url('../fonts/TajawalRegular.eot') format('embedded-opentype'), url('../fonts/TajawalRegular.woff2') format('woff2'), url('../fonts/TajawalRegular.woff') format('woff'), url('../fonts/TajawalRegular.ttf') format('truetype'), url('../fonts/TajawalRegular.svg#TajawalRegular') format('svg');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+body {
+    font-size: 1em;
+    font-weight: normal;
+    font-family: 'TajawalRegular' !important;
+    background-color: #074b50;
+    background-image: -moz-linear-gradient(top, #074b50, #71a57a 120%);
+    background-image: -webkit-linear-gradient(top, #074b50, #71a57a 120%);
+    background-image: -o-linear-gradient(top, #074b50, #71a57a 120%);
+    background-image: -ms-linear-gradient(top, #074b50, #71a57a 120%);
+    background-image: linear-gradient(top, #074b50, #71a57a 120%);
+    direction: rtl;
+    text-align: right;
+    overflow: hidden;
+    height: 100vh;
+}
+p, h1, h2, h3, h4,h5, h6, label{
+    padding: 0;
+    margin: 0;
+}
+ul, li, ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none !important;
+}
+.disabled{
+    opacity: .65;
+}
+.wrapper_pg {
+    background-image: url(../../Images/bg.png);
+    position: relative;
+    z-index: 1;
+}
+
+.login_wrapper {
+    background: #fff;
+    padding: 40px 80px 40px 0;
+    height: 100vh;
+    width: 400px;
+    position: relative;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+    .login_wrapper .rotate_bx {
+        background: #fff;
+        border-top-left-radius: 150px;
+        transform: rotate(-23deg);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 50%;
+        z-index: -1;
+        box-shadow: 0 0 15px -6px #000;
+    }
+
+.login_bx {
+    width: 100%;
+}
+
+    .login_bx .logo_bx {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .login_bx .form-control {
+        height: 45px;
+        line-height: 45px;
+        padding: 0 10px;
+        font-size: 0.9em;
+        border-radius: 25px;
+        border: none;
+        outline: 0;
+    }
+
+        .login_bx .form-control:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+
+    .login_bx .input-group-prepend {
+        margin: 0;
+    }
+
+    .login_bx .input-group-text {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        background: none;
+        color: none;
+    }
+
+    .login_bx .input-group {
+        margin-bottom: 20px;
+        border-radius: 25px;
+        background: #fff;
+        overflow: hidden;
+        border: 1px solid #eee;
+    }
+
+        .login_bx .input-group i {
+            background: #eee;
+            color: #999;
+            font-size: 15px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-left: 8px;
+        }
+
+    .login_bx .reminder_bx {
+        margin: 0 15px 25px;
+    }
+.login_bx .reminder_bx .forget {
+            float: left;
+            background: none;
+            border: none;
+            color: #1DB1BB;
+            font-size: 0.9em;
+            display: block;
+            transition: all 0.3s ease-in-out;
+        }
+
+            .login_bx .reminder_bx .forget:hover {
+                text-decoration: underline;
+                transition: all 0.3s ease-in-out;
+            }
+
+    .login_bx .btn_bx a {
+        color: #fff;
+        background-color: #71a57a;
+        background-image: -moz-linear-gradient(95deg, #71a57a, #1db1bb 150px);
+        background-image: -webkit-linear-gradient(95deg, #71a57a, #1db1bb 150px);
+        background-image: -o-linear-gradient(95deg, #71a57a, #1db1bb 150px);
+        background-image: -ms-linear-gradient(95deg, #71a57a, #1db1bb 150px);
+        background-image: linear-gradient(95deg, #71a57a, #1db1bb 150px);
+        font-size: 1em;
+        text-align: center;
+        border: none;
+        border-radius: 25px;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .login_bx .btn_bx a:hover {
+            background-color: #1db1bb;
+            background-image: -moz-linear-gradient(95deg, #1db1bb, #71a57a 150px);
+            background-image: -webkit-linear-gradient(95deg, #1db1bb, #71a57a 150px);
+            background-image: -o-linear-gradient(95deg, #1db1bb, #71a57a 150px);
+            background-image: -ms-linear-gradient(95deg, #1db1bb, #71a57a 150px);
+            background-image: linear-gradient(95deg, #1db1bb, #71a57a 150px);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .login_bx .btn_bx a i {
+            color: #fccf53;
+            margin-right: 8px;
+            margin-left: 15px;
+            float: left;
+            line-height: 40px;
+        }
+
+    .login_bx .verfication_form p {
+        color: #7f7777;
+        font-size: 1em;
+        width: 85%;
+        margin: 0 auto 20px;
+        padding: 0;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .login_bx .two_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+        .login_bx .two_btn button {
+            width: auto;
+            padding: 0 15px;
+        }
+
+            .login_bx .two_btn button i {
+                margin-left: 0;
+            }
+.login_bx .val_error{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    background: rgba(255,0,0,0.2);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    color: #ca3434;
+    font-size: 0.9em;
+    text-align: center;
+    display: block;
+    line-height: 20px;
+}
+/* FOOTER */
+.q_copyright p {
+    color: #adadad;
+    font-size: 0.88em;
+    text-align: center;
+    font-family: 'TajawalBold';
+    margin-top: 50px;
+}
+
+    .q_copyright p a {
+        margin: 0 6px;
+    }
+
+/* CheckBox */
+.lbl_check{
+    color: #6d6d6d;
+}
+[type="checkbox"]:not(:checked), 
+[type="checkbox"]:checked {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+[type="checkbox"]+span:not(.lever) {
+    position: relative;
+    padding-right: 25px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+[type="checkbox"]+span:not(.lever):before, 
+[type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    margin-top: 3px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+[type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+    border: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="checkbox"]:checked+span:not(.lever):before {
+        top: 0px;
+    right: 8px;
+    width: 10px;
+    height: 16px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #FF5B05;
+    border-bottom: 2px solid #FF5B05;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    border-radius: 0;
+}
+/* RESPONSIVE */
+@media (max-width: 576px) {
+.login_wrapper .rotate_bx{
+        display: none;
+    }
+    .login_wrapper {
+        padding: 40px;
+        border-bottom-left-radius: 120px;
+        border-top-left-radius: 120px;
+    }
+    .login_bx .logo_bx img{
+        max-width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .login_wrapper {
+        width: 90%;
+        padding: 15px !important;
+    }
+}
