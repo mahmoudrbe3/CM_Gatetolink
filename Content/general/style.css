@@ -92,7 +92,7 @@ header .top_header {
         display: block;
     }
     header .top_header .prof_list li .notf_txt,
-    header .top_header .prof_list li .fa-sign-out-alt{
+    header .top_header .prof_list li a{
         height: 35px;
         width: 35px;
         line-height: 35px;
